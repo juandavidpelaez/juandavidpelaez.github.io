@@ -36,7 +36,7 @@ header{
 
 .logo {
   flex: 0 0 120px;
-  padding: 0 17px;
+  padding: 0 5px;
   color: white;
   border-right: 1px solid #727c87;
   text-decoration: none;
@@ -45,7 +45,7 @@ header{
  
 nav a.nav-item {
   flex: 0 0 auto;
-  padding: 0 17px;
+  padding: 0 5px;
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -56,46 +56,42 @@ nav a.nav-item {
 }
 
 #hello {
-  padding: 200px 0;
+  padding: 80px 0 70px;
   text-align: center;
 }
 
 #hello h1 {
-  font-size: 48px;
-}
-
-#hello h2 {
-  font-size: 62px
-}
-
-#hello p {
   font-size: 36px;
 }
 
-#profile {
+#hello h2 {
+  font-size: 42px
+}
+
+#hello p {
+  font-size: 24px;
+  color: #444
+}
+
+#profile{
   padding: 80px 0 60px;
 }
 
 .flex-left, .flex-right {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%; 
+  margin: 0 4%;
 }
 
 .flex-left {
-  /*flex-grow: 1;*/
-  padding:0 5px;
+  flex-grow: 1;
   max-width: 550px;
   margin-top: auto;
   margin-bottom: auto;
   font-size: 20px;
   text-align: justify;
-  
 }
 
 .flex-right {
-  /*padding-left: 40px;*/
-  padding:0 25px;
   max-width: 250px;
   text-align: center;
   line-height: 0.8;
@@ -108,7 +104,7 @@ nav a.nav-item {
 
 #portfolio {
   padding: 80px 0 20px;
-  color: whitesmoke;  
+  color: whitesmoke;
 }
 
 
@@ -118,13 +114,11 @@ nav a.nav-item {
   text-align: center;
   padding-top: 40px;
   margin: 0 10px;
-
 }
 
 #portfolio .box img {
   width: 100%;
   height: auto;
-  
 }
 
 #contact {
@@ -146,6 +140,7 @@ nav a.nav-item {
   border-radius: 50px;
   display: inline-block;
   margin-bottom: 30px;
+  min-width: 310px;
 }
 
 #contact .info a:hover {  
@@ -196,7 +191,7 @@ nav a.nav-item {
 footer {
   font-size: 32px;
   text-align: center;
-  padding: 80px;
+  padding: 80px 0 40px;
   background-color: orange;
   font-weight: 700;
 }
@@ -225,4 +220,59 @@ footer {
   width: 100%;
   padding-bottom: 20px;
   text-align: center;
+}
+
+@media only screen and (min-width: 370px) {
+  .media-container{
+    width: 85%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .media-container{
+    width: 85%;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 12px;
+  }
+
+  .logo {
+    padding: 0 17px;
+  }
+  nav a.nav-item {
+    padding: 0 17px;
+  }
+
+  #hello {
+    padding: 160px 0 160px;
+    text-align: center;
+  }
+  
+  #hello h1 {
+    font-size: 48px;
+  }
+  
+  #hello h2 {
+    font-size: 62px
+  }
+  
+  #hello p {
+    font-size: 36px;
+  }
+  #contact .social a {
+    font-size: 32px;
+    padding: 5px 10px;
+    margin: 10px 25px;
+    min-width: 63px;
+    border-radius: 50px;
+  }
 }
