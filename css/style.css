@@ -247,6 +247,7 @@ footer {
 
   .logo {
     padding: 0 17px;
+    border-right: 0px solid #727c87;
   }
   nav a.nav-item {
     padding: 0 17px;
