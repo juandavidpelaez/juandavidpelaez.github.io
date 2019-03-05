@@ -56,20 +56,20 @@ nav a.nav-item {
 }
 
 #hello {
-  padding: 100px 0;
+  padding: 200px 0;
   text-align: center;
 }
 
 #hello h1 {
-  font-size: 38px;
+  font-size: 48px;
 }
 
 #hello h2 {
-  font-size: 42px
+  font-size: 62px
 }
 
 #hello p {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 #profile {
@@ -84,7 +84,7 @@ nav a.nav-item {
 
 .flex-left {
   /*flex-grow: 1;*/
-  /*padding-right: 20px;*/
+  padding:0 5px;
   max-width: 550px;
   margin-top: auto;
   margin-bottom: auto;
@@ -94,6 +94,8 @@ nav a.nav-item {
 }
 
 .flex-right {
+  /*padding-left: 40px;*/
+  padding:0 25px;
   max-width: 250px;
   text-align: center;
   line-height: 0.8;
@@ -101,18 +103,22 @@ nav a.nav-item {
 }
 
 .portfolio-background {
- background-color: #161616;
+ background-color: #444;
 }
 
 #portfolio {
   padding: 80px 0 20px;
-  color: whitesmoke
+  color: whitesmoke;  
 }
+
+
 
 #portfolio .box {
   max-width: 350px;
   text-align: center;
   padding-top: 40px;
+  margin: 0 10px;
+
 }
 
 #portfolio .box img {
@@ -206,12 +212,13 @@ footer {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
+  flex-direction: row;
 }
 
 .flex-container h2 {
@@ -219,4 +226,3 @@ footer {
   padding-bottom: 20px;
   text-align: center;
 }
-
