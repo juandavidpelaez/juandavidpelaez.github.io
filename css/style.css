@@ -84,16 +84,16 @@ nav a.nav-item {
 
 .flex-left {
   /*flex-grow: 1;*/
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   max-width: 550px;
   margin-top: auto;
   margin-bottom: auto;
   font-size: 20px;
+  text-align: justify;
   
 }
 
 .flex-right {
-  padding-left: 40px;
   max-width: 250px;
   text-align: center;
   line-height: 0.8;
